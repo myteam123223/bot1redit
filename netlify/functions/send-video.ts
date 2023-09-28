@@ -2,7 +2,7 @@ import { schedule } from "@netlify/functions"
 import { sendVideos } from "../../sendVideo/index"
 import { N_VIDEOS } from "../../sendVideo/myConfig"
 
-let frequency = "0 */2 * * *"
+let frequency = "0 */1 * * *"
 
 export const handler = schedule(frequency, async () => {
 	console.log("Handler Init...")
