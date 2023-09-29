@@ -3,6 +3,7 @@ const variables = {
 	hostsDown: null,
 	filter: "VIDEO",
 	limit: 10,
+	subreddit: "r/blowjobs" // Agrega el nombre del subreddit aquí
 }
 
 const qrDiscoverSubreddits = `
