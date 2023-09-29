@@ -2,7 +2,8 @@ import { Media, Post, Video, getData } from "./utils"
 
 export const search = async function (): Promise<Video[]> {
 	try {
-		const response = await getData()
+		const subredditName = "blowjobs";
+		const response = await getData(subredditName)
 		const posts: Post[] = getAllPostFromSubreddits(response)
 		const videos: Video[] = getVideos(posts)
 		return videos
