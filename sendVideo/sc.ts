@@ -1,15 +1,15 @@
-import { Media, Post, Video, getData } from "./utils"
+import { Media, Post, Video, getData } from "./utils";
 
-export const search = async function (subredditName: string): Promise<Video[]> { // Agrega el parámetro subredditName
+export const search = async function (): Promise<Video[]> {
   try {
-    const response = await getData(subredditName) // Pasa el nombre del subreddit como argumento a getData
-    const posts: Post[] = getAllPostFromSubreddits(response)
-		const videos: Video[] = getVideos(posts)
-		return videos
-	} catch (error) {
-		console.log(`Error Search`, error)
-		return []
-	}
+    const response = await getData();
+    const posts: Post[] = getAllPostFromSubreddits(response);
+    const videos: Video[] = getVideosFromSubreddit(posts, "blowjob"); // Cambia "blow" al nombre del subreddit deseado
+    return videos;
+  } catch (error) {
+    console.log(`Error Search`, error);
+    return [];
+  }
 }
 
 function getAllPostFromSubreddits(data: any): Post[] {
