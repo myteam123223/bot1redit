@@ -1,4 +1,3 @@
-const N_VIDEOS = 5
-const SUBREDDIT_NAME = "blowjob"; // Reemplaza "blowjobs" con el nombre del subreddit que deseas consultar
+const N_VIDEOS = 6
 
-export { N_VIDEOS, SUBREDDIT_NAME };
+export { N_VIDEOS }
