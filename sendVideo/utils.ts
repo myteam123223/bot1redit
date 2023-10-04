@@ -38,7 +38,3 @@ export interface Video {
 export interface Media {
 	url: string
 }
-
-export interface Media {
-	url: string
-}
